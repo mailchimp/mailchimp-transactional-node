@@ -142,7 +142,7 @@ All URIs are relative to *https://mandrillapp.com/api/1.0*
 
 
 
-## Additional Client Libraries
+## Additional Libraries
 
 Mailchimp Transactional libraries are available in the following languages:
 
