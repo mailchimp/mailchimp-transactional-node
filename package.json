@@ -8,7 +8,7 @@
     "fs": false
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "types": "types.d.ts"
 }
