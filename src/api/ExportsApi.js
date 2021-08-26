@@ -28,16 +28,16 @@ module.exports = function (apiClient) {
   };
 
   /**
-   * Export blacklist
-   * Begins an export of your rejection blacklist. The blacklist will be exported to a zip archive containing a single file named rejects.csv that includes the following fields: email, reason, detail, created_at, expires_at, last_event_at, expires_at.
+   * Export denylist
+   * Begins an export of your rejection denylist. The denylist will be exported to a zip archive containing a single file named rejects.csv that includes the following fields: email, reason, detail, created_at, expires_at, last_event_at, expires_at.
    */
   this.rejects = function (body) {
     return this.apiClient.post('/exports/rejects', body);
   };
 
   /**
-   * Export whitelist
-   * Begins an export of your rejection whitelist. The whitelist will be exported to a zip archive containing a single file named whitelist.csv that includes the following fields: email, detail, created_at.
+   * Export Allowlist
+   * Begins an export of your rejection allowlist. The allowlist will be exported to a zip archive containing a single file named whitelist.csv that includes the following fields: email, detail, created_at.
    */
   this.whitelist = function (body) {
     return this.apiClient.post('/exports/whitelist', body);
