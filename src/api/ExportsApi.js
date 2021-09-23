@@ -12,6 +12,14 @@ module.exports = function (apiClient) {
   };
 
   /**
+   * Export Allowlist
+   * Begins an export of your rejection allowlist. The allowlist will be exported to a zip archive containing a single file named allowlist.csv that includes the following fields: email, detail, created_at.
+   */
+  this.allowlist = function (body) {
+    return this.apiClient.post('/exports/allowlist', body);
+  };
+
+  /**
    * View export info
    * Returns information about an export job. If the export job's state is 'complete', the returned data will include a URL you can use to fetch the results. Every export job produces a zip archive, but the format of the archive is distinct for each job type. The api calls that initiate exports include more details about the output format for that job type.
    */
@@ -37,7 +45,7 @@ module.exports = function (apiClient) {
 
   /**
    * Export Allowlist
-   * Begins an export of your rejection allowlist. The allowlist will be exported to a zip archive containing a single file named whitelist.csv that includes the following fields: email, detail, created_at.
+   * Begins an export of your rejection allowlist. The allowlist will be exported to a zip archive containing a single file named allowlist.csv that includes the following fields: email, detail, created_at.
    */
   this.whitelist = function (body) {
     return this.apiClient.post('/exports/whitelist', body);

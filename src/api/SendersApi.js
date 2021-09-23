@@ -13,7 +13,7 @@ module.exports = function (apiClient) {
 
   /**
    * Check domain settings
-   * Checks the SPF and DKIM settings for a domain. If you haven't already added this domain to your account, it will be added automatically.
+   * Checks the SPF and DKIM settings for a domain, as well the domain verification. If you haven't already added this domain to your account, it will be added automatically.
    */
   this.checkDomain = function (body) {
     return this.apiClient.post('/senders/check-domain', body);

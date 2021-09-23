@@ -2,6 +2,9 @@
 
 ## Transactional
 
+### 1.0.40
+* Added the new /allowlists/ series of endpoints and the /exports/allowlist endpoint to the API reference
+
 ### 1.0.39
 * Fixes the output directory for the Changelog for the php client library
 
@@ -12,6 +15,9 @@
 * Added a changelog, which will be used to describe changes to both transactional and marketing client libraries.
 
 ## Marketing
+
+### 3.0.65
+* Added a new API endpoint, `/3.0/account-exports`, allowing users to programatically export their account information
 
 ### 3.0.64
 * Fixes the output directory for the Changelog for the php client library

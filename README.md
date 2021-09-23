@@ -58,7 +58,11 @@ All URIs are relative to *https://mandrillapp.com/api/1.0*
 
 | Method | Endpoint |
 | ---------- | -------- |
+| **allowlists.add** | /allowlists/add |
+| **allowlists.delete** | /allowlists/delete |
+| **allowlists.list** | /allowlists/list |
 | **exports.activity** | /exports/activity |
+| **exports.allowlist** | /exports/allowlist |
 | **exports.info** | /exports/info |
 | **exports.list** | /exports/list |
 | **exports.rejects** | /exports/rejects |
