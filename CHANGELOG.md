@@ -2,6 +2,9 @@
 
 ## Transactional
 
+### 1.0.41
+* Updated the "reject_reasons" response for /messages/send and /messages/send-template to correctly use "hard-bounce" and "soft-bounce" instead of the previously stated "hard_bounce" and "soft_bounce".
+
 ### 1.0.40
 * Added the new /allowlists/ series of endpoints and the /exports/allowlist endpoint to the API reference
 
