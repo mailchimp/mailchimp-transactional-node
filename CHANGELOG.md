@@ -2,6 +2,9 @@
 
 ## Transactional
 
+### 1.0.42
+* Added a `setDefaultTimeoutMs` method to the node client. This allows users to override the default timeout for API requests, which is set to 5 minutes by default.
+
 ### 1.0.41
 * Updated the "reject_reasons" response for /messages/send and /messages/send-template to correctly use "hard-bounce" and "soft-bounce" instead of the previously stated "hard_bounce" and "soft_bounce".
 
