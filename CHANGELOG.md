@@ -2,6 +2,9 @@
 
 ## Transactional
 
+### 1.0.44
+* Added a `set_timeout` method to the Client class in the Python SDK
+
 ### 1.0.43
 * Added a `setTimeout` method to the Configuration class in the PHP SDK.
 
@@ -24,6 +27,9 @@
 * Added a changelog, which will be used to describe changes to both transactional and marketing client libraries.
 
 ## Marketing
+
+### 3.0.68
+* Added handling for a `'timeout'` field in `set_config()` in the Python Marketing SDK.
 
 ### 3.0.67
 * Added a `setTimeout()` method to the configuration class in the PHP Marketing SDK, to allow manually setting the timeout for Guzzle requests.
