@@ -2,6 +2,9 @@
 
 ## Transactional
 
+### 1.0.45
+* Added a `set_timeout` method to the Client class in the Ruby SDK
+
 ### 1.0.44
 * Added a `set_timeout` method to the Client class in the Python SDK
 
@@ -27,6 +30,9 @@
 * Added a changelog, which will be used to describe changes to both transactional and marketing client libraries.
 
 ## Marketing
+
+### 3.0.69
+* Added handling for a `timeout` field in the config block passed to the client constructor in the Ruby Marketing SDK.
 
 ### 3.0.68
 * Added handling for a `'timeout'` field in `set_config()` in the Python Marketing SDK.
