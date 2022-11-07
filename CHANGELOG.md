@@ -2,6 +2,9 @@
 
 ## Transactional
 
+### 1.0.50
+* Added a response parameter to /messages/send and /messages/send-template called 'queued_response' that details why an email was queued.
+
 ### 1.0.48
 * Allowing users to schedule messages (using messages/send, messages/send-template, messages/send-raw and messages/reschedule APIs) within a year from the date of scheduling.
 
