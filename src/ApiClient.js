@@ -42,9 +42,9 @@ var exports = function (apiKey = '') {
   this.formatList = ['json', 'xml', 'php', 'yaml'];
   this.contentTypes = ['application/json'];
   this.accepts = [
-    'application/json', 
-    'application/xml', 
-    'application/x-php', 
+    'application/json',
+    'application/xml',
+    'application/x-php',
     'application/x-yaml; charset=utf-8'
   ];
 
@@ -94,7 +94,10 @@ exports.prototype.post = function post(path, body = {}) {
   }
 
   return axios
-    .post(url, body)
+    .post(url, body, {
+      maxBodyLength: Infinity,
+      maxContentLength: Infinity
+    })
     .then(function (response) {
       return response.data;
     })

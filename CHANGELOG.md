@@ -2,6 +2,9 @@
 
 ## Transactional
 
+### 1.0.51
+* Added `maxBodyLength` and `maxContentLength` configurations to axios in order to prevent failures with `Request body larger than maxBodyLength limit` error message
+
 ### 1.0.50
 * Added a response parameter to /messages/send and /messages/send-template called 'queued_response' that details why an email was queued.
 
