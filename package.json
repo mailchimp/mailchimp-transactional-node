@@ -1,6 +1,6 @@
 {
   "name": "@mailchimp/mailchimp_transactional",
-  "version": "1.0.57",
+  "version": "1.0.59",
   "description": "The official Node client library for the Mailchimp Transactional API",
   "license": "Apache 2.0",
   "main": "src/index.js",
@@ -8,7 +8,7 @@
     "fs": false
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^1.6.7"
   },
   "homepage": "https://github.com/mailchimp/mailchimp-transactional-node",
   "repository": {
